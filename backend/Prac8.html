@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Counter Local Storage task</title>
+</head>
+<body>
+    <h1 id="counter">
+
+    </h1>
+
+    <button onclick="inc()">Increment</button>
+    <button onclick="dec()">Decrement</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        var count= localStorage.getItem("count") || 0
+        document.getElementById("counter").innerHTML=`Count : ${count}`
+        const inc = () => {
+            count=parseInt(count)+1
+            changecount(count)
+        }
+
+        const dec = () => {
+            count=count-1
+            changecount(count)
+        }
+
+        const reset = () => {
+            changecount(0)
+        }
+
+        function changecount(count)
+        {
+            localStorage.setItem("count",count);
+            document.getElementById("counter").innerHTML=`Count : ${count}`
+        }
+
+    </script>
+</body>
+</html>
+
