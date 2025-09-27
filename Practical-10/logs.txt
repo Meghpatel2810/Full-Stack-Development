@@ -1,0 +1,20 @@
+C:\Users\MEGH\Documents\Charusat\SEM 5\Full Stack Development\Practice Codes\Practical-10>npm run dev
+
+> practical-10@1.0.0 dev
+> node index.js
+
+Server is running on http://localhost:5000
+Terminate batch job (Y/N)? y
+
+C:\Users\MEGH\Documents\Charusat\SEM 5\Full Stack Development\Practice Codes\Practical-10>npm run dev
+
+> practical-10@1.0.0 dev
+> node index.js
+
+Server is running on http://localhost:5000
+[Error: ENOENT: no such file or directory, open 'C:\Users\MEGH\Documents\Charusat\SEM 5\Full Stack Development\Practice Codes\Practical-10\llogs.txt'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\MEGH\\Documents\\Charusat\\SEM 5\\Full Stack Development\\Practice Codes\\Practical-10\\llogs.txt'
+}
